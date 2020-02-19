@@ -1,0 +1,16 @@
+<h1>Voici votre restaurant</h1>
+<br>
+<ul>
+<li><%= @restaurant[:name]%></li>
+<br>
+<li><%= @restaurant[:address]%></li>
+<br>
+<li><%= @restaurant[:category]%></li>
+<br>
+<li><%= @restaurant[:phone_number]%></li>
+</ul>
+<br>
+<%= link_to "add a new review", new_restaurant_review_path(@restaurant)%>
+<br>
+<%= link_to "back à la liste", restaurant_path%>
+
